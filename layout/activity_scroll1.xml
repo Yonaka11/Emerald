@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/asset__19_"
+
+    tools:context=".MainActivity">
+
+
+    <androidx.core.widget.NestedScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="3000sp"
+            android:gravity="top"
+            android:orientation="vertical">
+
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="591dp"
+                android:layout_height="443dp"
+
+
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="image buton "
+                android:contextClickable="true"
+                android:scaleType="fitCenter"
+
+
+                android:src="@drawable/main_png"
+                android:tooltipText="@string/app_name"
+                app:layout_constraintBottom_toBottomOf="@id/imageButton"></ImageButton>
+
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/circularProgressBar"
+                android:layout_width="294dp"
+                android:layout_height="182dp"
+
+                android:layout_alignBottom="@+id/imageButton"
+                android:layout_alignParentEnd="true"
+
+                android:layout_gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_marginEnd="87dp"
+                android:layout_marginBottom="128dp"
+                app:cpb_background_progressbar_color="#b6bbd8"
+                app:cpb_background_progressbar_width="5dp"
+                app:cpb_progress="@integer/material_motion_duration_short_1"
+                app:cpb_progress_direction="to_right"
+                app:cpb_progress_max="200"
+
+
+                app:cpb_progressbar_color="#3f51b5"
+                app:cpb_progressbar_width="10dp"
+                app:cpb_round_border="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/steps"
+                android:layout_width="234dp"
+                android:layout_height="98dp"
+                android:layout_below="@+id/imageButton"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+
+
+                android:layout_marginStart="85dp"
+                android:layout_marginTop="-45dp"
+                android:layout_marginEnd="60dp"
+                android:text="@string/app_name"
+                android:textColor="@color/black"
+                android:textSize="45sp" />
+
+            <TextView
+                android:id="@+id/tv_stepsTaken"
+                android:layout_width="184dp"
+                android:layout_height="159dp"
+
+                android:layout_alignBottom="@+id/imageButton"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+
+                android:layout_marginStart="106dp"
+                android:layout_marginEnd="89dp"
+
+                android:layout_marginBottom="142dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="37sp" />
+
+            <ImageButton
+                android:id="@+id/imageViewbtn"
+                android:layout_width="104dp"
+                android:layout_height="139dp"
+                android:layout_alignBottom="@+id/steps"
+                android:layout_gravity="center"
+                android:layout_marginBottom="-79dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.97"
+                app:srcCompat="@drawable/gas22"
+                android:scaleType="fitCenter"
+                android:clickable="true"
+                android:background="@android:color/transparent"></ImageButton>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="154dp"
+                android:layout_height="189dp"
+                android:layout_alignBottom="@+id/steps"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:layout_marginEnd="-10dp"
+                android:layout_marginBottom="-102dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.97"
+                app:srcCompat="@drawable/gring" />
+
+            <TextClock
+                android:id="@+id/textClock"
+                android:layout_width="241dp"
+                android:layout_height="61dp"
+                android:layout_above="@+id/circularProgressBar"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+
+                android:layout_marginTop="41dp"
+                android:layout_marginEnd="84dp"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="300dp"
+                app:layout_constraintBottom_toTopOf="@+id/circularProgressBar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:layout_width="56sp"
+                android:layout_height="172sp"
+                android:layout_below="@+id/steps"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="172dp"
+
+                android:layout_marginEnd="56dp"
+                android:layout_weight="3"
+                android:backgroundTint="@color/material_on_surface_stroke"
+                android:foregroundGravity="center"
+                android:scaleType="center"
+                android:scaleX="2.5"
+                android:scaleY="2"
+                android:src="@drawable/ic_launcher_background">
+
+            </ImageButton>
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:id="@+id/toolbar"
+                app:title="Scroller"
+
+                />
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>
